@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+<title>Micro-Project</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <!-- A form which takes in student details -->
+<h2>Student Enrollment Form</h2>
+<form id="studentForm" method="get">
+    <div class="form-group">
+      <label for="rollNo">Roll No:</label>
+      <input type="text" class="form-control" id="rollNo" name="rollNo" placeholder="Enter Roll No" onchange="getStudent()" required>
+    </div>
+    <div class="form-group">
+      <label for="fullName">Full Name:</label>
+      <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter Full Name" required>
+    </div>
+    <div class="form-group">
+      <label for="class">Class:</label>
+      <input type="text" class="form-control" id="classes" name="class" placeholder="Enter Class" required>
+    </div>
+    <div class="form-group">
+      <label for="birthDate">Birth Date:</label>
+      <input type="date" class="form-control" id="birthDate" name="birthDate" required>
+    </div>
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <textarea class="form-control" id="address" name="address" rows="3" placeholder="Enter Address" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="enrollmentDate">Enrollment Date:</label>
+      <input type="date" class="form-control" id="enrollmentDate" name="enrollmentDate" required>
+    </div>
+    <div class="text-center">
+        <button type="button" id="save" onclick="saveData()" class="btn btn-primary mx-2" disabled>Save</button>
+        <button type="button" id="change" onclick="changeData()" class="btn btn-primary mx-2" disabled>Change</button>
+        <button type="button" id="reset" onclick="resetForm()" class="btn btn-primary mx-2" disabled>Reset</button>
+    </div>
+  </form>
+</div>
+
+
+<!-- <form id="empForm" method="get">
+<div class="form-group">
+<span><label for="empId">Employee I:</label> <label id="empIdMsg">
+</label></span>
+<input type="text" class="form-control" name="empId" id="empId"
+placeholder="Enter Employee ID" required>
+</div>
+<div class="form-group">
+<label for="empName">Employee Name:</label>
+<input type="text" class="form-control" id="empName"
+placeholder="Enter Employee Name" name="empName">
+</div>
+<div class="form-group">
+<label for="empEmail">Email:</label>
+<input type="email" class="form-control" id="empEmail"
+placeholder="Enter Employee Email" name="empEmail">
+</div>
+<input type="button" class="btn btn-primary" id="empSave" value="Save"
+onclick="saveEmployee();">
+</form> -->
+<script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+<script src="index.js"></script>
+
+    </body>
+    </html>
+    
